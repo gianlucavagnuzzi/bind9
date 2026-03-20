@@ -1,0 +1,14 @@
+$TTL 24h
+@		IN      SOA     mydomain.lan. root.mydomain.lan. (
+                         2013011300 ; serial number
+                         3h         ; refresh time
+                         30m        ; retry time
+                         7d         ; expire time
+                         3h         ; negative caching ttl
+                         )
+ 
+		IN      NS      ns1.mydomain.lan.
+		IN      NS      ns2.mydomain.lan.
+ 
+4	IN      PTR     host1.mydomain.lan.
+

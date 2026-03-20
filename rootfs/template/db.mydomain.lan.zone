@@ -1,0 +1,25 @@
+
+$TTL 24h
+@		IN      SOA     ns1.mydomain.lan. root.mydomain.lan. (
+                         2013011300  ; serial number
+                         3h          ; refresh time
+                         30m         ; retry time
+                         7d          ; expire time
+                         3h          ; negative caching ttl
+			 )
+
+; name servers - NS records
+@                IN      NS      ns1.mydomain.lan.
+@                IN      NS      ns2.mydomain.lan.
+
+; name servers - A records
+@               IN      A	192.168.0.3 ; this is the record needed to resolve apex domain = mydomain.lan
+ns1             IN      A	192.168.0.1
+ns2             IN      A	192.168.0.2
+
+host1           IN      A   192.168.0.4
+
+; name servers - CNAME records
+cname1      	IN CNAME   host1
+
+

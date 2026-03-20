@@ -1,0 +1,17 @@
+
+# https://hub.docker.com/repository/docker/rardcode/bind9/tags
+
+services:
+  bind9:
+    image: rardcode/bind9
+    container_name: bind9
+    #environment:
+    #  - TZ=Europe/Rome
+    volumes:
+    - ./data:/data
+    - /etc/timezone:/etc/timezone:ro
+    - /etc/localtime:/etc/localtime:ro
+    # use "network_mode: host" to get queries from the host that hosts the docker with the correct source ip of lan ex 192.168.88.145,
+    # otherwise they would come with the ip of the gatewway interface of the docker ex 172.19.0.1
+    network_mode: host
+    restart: unless-stopped
