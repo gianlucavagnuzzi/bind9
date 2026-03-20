@@ -3,7 +3,7 @@ Dns server based on Debian.
 
 ## Quick reference
 * Where to file issues:
-[Gitea](https://git.gmmg.it/kom23/bind9/issues)
+[GitHub](https://github.com/gianlucavagnuzzi/bind9/issues)
 
 * Supported architectures: amd64 , armv7 , arm64v8
 
@@ -35,5 +35,5 @@ services:
 ```
 ## Changelog
 ### v134.1920181 - 20.03.2026
-- Debian v. 13.4
-- bind9 v. 1:9.20.18-1
+- Debian v.13.4
+- bind9 v.1:9.20.18-1
