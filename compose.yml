@@ -1,9 +1,9 @@
 
-# https://hub.docker.com/repository/docker/rardcode/bind9/tags
+# https://hub.docker.com/repository/docker/gianlucavagnuzzi/bind9/tags
 
 services:
   bind9:
-    image: rardcode/bind9
+    image: gianlucavagnuzzi/bind9
     container_name: bind9
     #environment:
     #  - TZ=Europe/Rome
